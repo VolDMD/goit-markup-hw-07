@@ -1,7 +1,7 @@
 .about {
     padding-bottom: 94px;
 }
-.about-top {
+.about__top {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -9,23 +9,18 @@
     letter-spacing: 0.03em;
     color: var(--brand-color);
     margin-bottom: 50px;
-
 }
-.about-list{
-
+.about__list{
     display: flex; 
     justify-content: center;
     gap: 30px;
 }
-
-.about-img-link{
+.about__img-link{
     position: relative;
     display: block;
     line-height: 0;
 }
-
-.about-img-title{
-
+.about__img-title{
     position: absolute;
     bottom: 0;
     right: 0;

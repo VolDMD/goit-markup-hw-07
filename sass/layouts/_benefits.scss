@@ -3,13 +3,13 @@
     padding-top: 94px; 
     padding-bottom: 94px;
 }
-.benefits-icon-list{
+.benefits__icon-list{
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.benefits-icon-link{
+.benefits__icon-link{
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
@@ -18,22 +18,19 @@
     justify-content: center;
     margin-bottom: 30px;
     border-radius: 4px;
-
 }
-
-.benefits-icon-img:hover,
-.benefits-icon-img:focus {
+.benefits__icon-img:hover,
+.benefits__icon-img:focus {
     fill: #2196f3;
 }
-
-.benefits-top{
+.benefits__top{
     display: flex; 
     justify-content: center;
     gap: 30px; 
      
     background: #FFFFFF;
 }
-.benefits-list {
+.benefits__list {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -41,9 +38,8 @@
     text-transform: uppercase;
     color: var(--brand-color);    
     margin-bottom: 10px;
-   
 }
-.benefits-list-text {
+.benefits__list-text {
     width: 270px;
     height: 72px;
     font-size: 14px;
