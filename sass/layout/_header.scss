@@ -1,0 +1,118 @@
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.logo {
+
+  display: inline-block;
+  text-decoration: none;
+  color: $--accent-text-color;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+
+}
+
+.logo--header-position {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo__part--dark {
+  color: $--primery-text-color;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.menu-list__nav--left {
+  margin-left: 93px;
+
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu__link{
+  &:link,&:active,&:visited {color: $--primery-text-color;}
+}
+.menu__link {
+  display: block;
+  padding: 29px 0;
+  position: relative;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $--accent-text-color;
+  }
+}
+
+.menu__link.current {
+  color: $--accent-text-color;
+}
+
+.current::after {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $--accent-text-color;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__contacts {
+  margin-left: auto;
+}
+
+.contacts__link {
+  display: inline-flex;
+  color:$--second-text-color;
+  padding: 31px 0;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $--accent-text-color;
+  }
+}
+
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+
+}
+
+.contacts>li:last-child {
+  margin-left: 50px;
+}

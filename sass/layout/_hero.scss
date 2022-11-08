@@ -1,0 +1,49 @@
+
+  .hero {
+    background-color:&--background-hero-color;
+    text-align: center;
+    padding: 200px 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/cover-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+  
+  .hero__title {
+    margin: 0 auto 30px auto;
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    color:$--wighte-text-color;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  
+  .hero_button {
+    padding: 10px 32px;
+    color:$--wighte-text-color;
+    background-color:$--accent-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    @include transition(background-color);
+    &:hover,
+    &:focus {
+    background-color:$--button-activ-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+   &--centered {margin: 0 auto;
+  }
+  }
+  
